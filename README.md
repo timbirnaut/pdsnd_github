@@ -1,8 +1,8 @@
 ### 8/17/2020
-Include the date you created this project and README file.
+Started 8/17/20
 
 ### Bikeshare Project
-Replace the Project Title
+Provided by Udacity
 
 ### Asks Users what City, Month and Day they would like to filter to and see a variety of Bikeshare statistics 
 Describe what your project is about and what it does
