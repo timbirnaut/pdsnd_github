@@ -15,7 +15,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello! Let\'s explore some US bikeshare data!  You will be asked a series of questions, feel free to use upper or lowercase entries for a filtered response to this dataset')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
         city = input('\nWould you like to see data for chicago, new york, or washington?\n')
@@ -28,7 +28,7 @@ def get_filters():
 
     # TO DO: get user input for month (all, january, february, ... , june)
     while True:
-        month = input('\nWhat month would you like to see?\n')
+        month = input('\nWhat month would you like to see? Keep in mind - data is only available until June\n')
         if month.lower() not in ('january','febuary','march','april','may','june'):
             print('try again')
         elif month.lower() in  ('january','febuary','march','april','may','june'):
@@ -223,6 +223,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+#Added functionality 8.17.20 - displays first 5 rows of data
 def display_data(df):
     view_data = input('\nWould you like to view 5 rows of individual trip data? Enter yes or no\n')
     start_loc = 0
@@ -241,6 +242,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
+        #added 8.17.20
         display_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
