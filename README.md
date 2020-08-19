@@ -5,7 +5,8 @@ Started 8/17/20
 Provided by Udacity
 
 ### Asks Users what City, Month and Day they would like to filter to and see a variety of Bikeshare statistics 
-Added scripting feature that shows first 5 rows of data
+8/19/20 Added scripting feature that shows first 5 rows of data
+8/19/20 Added Comments to scripting feature
 
 ### bikeshare.py
 Include the files used
